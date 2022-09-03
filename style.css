@@ -222,7 +222,7 @@ li:hover{color: #dc985a;}
     .text-small, .number, button {font-size: 11px !important;}
     .left-foot > p {font-size: 13px;}
     .left-foot > .star {padding-top: 7px;}
-    .certified > * {
+    .certified > *, .img-text-large {
         width: 30px;
         height: 30px;
     }
