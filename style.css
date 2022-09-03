@@ -1,0 +1,239 @@
+.container-element {
+    display: flex;
+    width: 100%;
+}
+.left, .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left, nav {padding-top: 30px;}
+.right {padding-bottom: 15px;}
+.logo {
+    height: 40px;
+    width: 40px;
+    fill: none;
+    stroke-width: 10px;
+    stroke: #e2924e;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.text-large {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    font-size: 46px;
+    letter-spacing: 1px;
+}
+.text-large > p {
+    margin-bottom: 0px !important;
+}
+.img-text-large {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.line {
+    margin-top: 37px;
+    margin-right: 17px;
+    height: 2px !important;
+    background-color: #e2924e;
+    color: #e2924e;
+}
+#star-large {
+    margin-left: 3px;
+    font-size: 30px;
+    color: #e2924e;
+}
+.text-small {
+    margin-top: 30px;
+    color: #858386;
+    font-size: 15px;
+}
+button {
+    border-radius: 26px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+.getStarted {
+    background-color: #dc985a;
+    color: #fff;
+    border: 1px solid #dc985a;
+}
+.getStarted:hover {
+    background-color: #fff;
+    color: #dc985a;
+    border: 1px solid #dc985a
+}
+.browseCourse {
+    background-color: #fff;
+    color: #dc985a;
+    border: 1px solid #dc985a
+}
+.browseCourse:hover, .add:hover {
+    background-color: #dc985a;
+    color: #fff;
+    border: 1px solid #dc985a;
+}
+.fa-arrow-right {font-size: 10px;}
+.left-foot {margin-top: 40px;}
+.left-foot > .star {
+    width: 63px;
+    padding-top: 12px;
+    margin-right: 18px;
+    text-align: center;
+    color: #dc985a;
+    background-color: black;
+    border-radius: 5px;
+}
+.left-foot > p {
+    margin-bottom: 0 !important;
+    color: #4d4c4a;
+}
+.img-back  {
+    position: relative;
+    background-image: url('img/b2.jpg');
+    background-position: center;
+    /* z-index: -1; */
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0!important;
+    list-style-type: none;
+    color: #fff;
+    font-size: 14px;
+}
+li, .sign-up {cursor: pointer;}
+li:hover{color: #dc985a;}
+
+.top-right {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 175px;
+    height: 253px;
+    padding: 15px;
+    background-color: #dc985a;
+    color: #fff;
+    /* z-index: -1; */
+}
+.sign-up {
+    margin-top: 15px;
+    font-size: 14px;
+}
+#star-top-right {
+    font-size: 20px;
+    margin-top: 70px;
+}
+.top-right > p {
+    font-size: 14px;
+
+}
+.right-foot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -20px;
+    left: -60px;
+    width: 230px;
+    height: 120px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 1px rgb(244, 244, 244);
+    border-radius: 10px;
+}
+.certified {
+    display: flex;
+}
+.certified > * {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.add {
+    background-color: #fff;
+    border: 1px solid #dc985a;
+    color: #dc985a;
+    font-size: 15px !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1211px) {
+    .text-large {font-size: 37px;}
+    ul, .sign-up {font-size: 13px;}
+    .top-right {width: 150px;}
+    .line {margin-top: 27px;}
+}
+
+@media screen and (max-width: 992px) {
+    .text-large {
+        font-size: 27px;
+        margin-top: 95px;
+    }
+    .top-right {display: none;}
+    .line {margin-top: 20px;}
+}
+
+@media screen and (max-width: 768px) {
+    .right {
+        position: absolute;
+        right: 0;
+    }
+    .left {width: 100% !important;}
+    .img-back {
+        background: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    nav {width: 100%;}
+    ul {color: black; font-size: 12px;}
+    .right-foot {
+        position: static;
+    }
+    .text-large {
+        font-size: 25px;
+        margin-top: 75px;
+    }
+    .text-small, .number {font-size: 14px;}
+    button {font-size: 13px !important;}
+}
+
+@media screen and (max-width: 576px) {
+    .line {margin-top: 15px;}
+    .text-large {
+        font-size: 20px;
+        margin-top: 70px;
+        letter-spacing: 0;
+    }
+    #star-large {font-size: 20px;}
+    ul {font-size: 10px;}
+    .text-small, .number, button {font-size: 11px !important;}
+    .left-foot > p {font-size: 13px;}
+    .left-foot > .star {padding-top: 7px;}
+    .certified > * {
+        width: 30px;
+        height: 30px;
+    }
+    .right-foot {
+        width: 188px;
+        height: 60px;
+        padding: 5px 0;
+    }
+    .add > span {
+        position: relative;
+        bottom: 5px;
+        right: 3px;
+    }
+}
